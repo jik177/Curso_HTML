@@ -9,8 +9,8 @@
 
 <body>
 
-    <div style="text-align: center; margin: 0 auto;">
-        
+    <div style="text-align: center; margin:0 auto;">
+
         <!--
             Etiquetas
                 -> video
@@ -34,9 +34,51 @@
         -->
         <h3>Video</h3>
 
-        <video src=""></video>
-        <iframe src="" frameborder="0"></iframe>
-        <embed src="" type="">
+        <!-- 
+            Estructura de video  no recomentdada ⬇️
+        -->
+
+        <video poster="../images/boton-de-play.png" width="20%" height="20%" autoplay controls frameborder="1">
+            <source src="http://media.w3.org/2010/05/sintel/trailer_hd.mp4">
+        </video>
+
+        <br>
+
+        <!-- 
+            Estructura de video recmendada ⬇️ 
+        -->
+
+        <video src="http://media.w3.org/2010/05/sintel/trailer_hd.mp4" width="500" height="300" autoplay controls muted>
+        </video>
+
+        <br>
+        <!--
+            video incrustado de RRSS
+        -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/caDYqvJ8wq8?si=pXw_LvSwI_gxQVaP"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <br>
+
+        <iframe style="width: 560;height: 315;" frameborder="0" type="text/html"
+            src="https://www.dailymotion.com/embed/video/xdsdo"  allowfullscreen
+            title="Dailymotion Video Player">
+        </iframe>
+
+
+        <br>
+<!--
+    Injectamos elementos como objetos
+    definiado por si Sintaxis:
+    <object> <object>
+        sustituimos en src="" como atributo por "data"
+        asi mismo podemos acceder a otros atributos desde style
+-->
+        <object data="" type=""></object>
+
+
     </div>
 
 </body>
