@@ -89,7 +89,7 @@ h6 {
     }
 */
 
-#p1{
+#p1 {
     background-color: blanchedalmond;
     font-size: larger;
     font-style: italic;
@@ -103,12 +103,38 @@ h6 {
         atributo:Valor
     }  
 */
-p.amarillo{
+p.amarillo {
     /*
     busca alli donde hay una etiqueta de parrafo 
     y si tiene la clase amarillo ajecuta el estilo
     */
-    color:yellow;
+    color: yellow;
     font-weight: bold;
     font-size: xx-large;
+}
+
+/*
+configuracion de tabla 
+*/
+
+table,
+th,
+td {
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid skyblue;
+    /*
+    CSS3, el border, llamando a 3 atributos seguidos por un espacio:
+    border: Tamaño del borde.
+    border.style: solid.
+    border.color: skyblue.
+    */
+    border-collapse: collapse;
+    /*
+        border-collapse ,digamos que colapsa las dobles lineas de la tabla
+    */
+}
+
+hr {
+    width: 50%;
 }
