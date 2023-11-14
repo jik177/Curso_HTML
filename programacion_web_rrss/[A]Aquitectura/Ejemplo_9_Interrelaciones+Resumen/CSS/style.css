@@ -47,9 +47,14 @@ td {
     padding: 16;
 }
 
-img{
+div a img{
     width: 2%;
 }
+
+.justeImagen{
+    width: 2%;
+}
+
 ul{
     list-style: none;
 }
