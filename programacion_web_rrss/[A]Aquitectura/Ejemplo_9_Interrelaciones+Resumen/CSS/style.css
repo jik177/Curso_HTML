@@ -1,0 +1,71 @@
+body {
+    background-color: #ece5da;
+}
+
+h2 {
+    background-color: rgb(209, 200, 206);
+    color: #ece5da;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+/*
+En correcciones o ajuste de posicion con respecto a un elemento o/y al doctype
+para ello recurriremos a dos elementos:
+    -El margin (viene definido por los ejes, tendra 4 valores: left,right, top botton)
+        comandos:
+            -> margin-top: ;
+            -> margin-bottom: ;
+            -> margin-right: ;
+            -> margin-left: ;
+
+    -El padding (viene definido por los ejes, en el movimiento del rejol, de izq a drch
+                 tendra 4 atributos asociados:left,right, top botton)
+        comandos:
+            -> padding-top: ;
+            -> padding-bottom: ;
+            -> padding-right: ;
+            -> padding-left: ;
+
+    Se defencia el margin del padding en el dicho margen es con respecto no al doctype
+    sino al elemento en el que se encuentra
+
+    */
+
+table {
+
+    /*margin-top: 32px; ojo a los elemento que se complementan*/
+
+    text-align: center;
+}
+
+.ajusteImagen {
+    width: 32px;
+}
+
+td {
+    padding: 16px;
+}
+
+div a img {
+    width: 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 8px;
+}
+
+.divDL{
+    text-align: center;
+    margin: 0 auto;
+}

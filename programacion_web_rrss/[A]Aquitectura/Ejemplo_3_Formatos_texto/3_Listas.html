@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas ordenadas, no ordenadas y esplegables</title>
+</head>
+
+<body>
+
+    <!--
+    Las Lista
+    Presenta los elementos de una manera ordenada(alfanumerica)
+    Sintaxis:
+    <ol>
+        <li></li>
+    </ol>    
+
+    Atriutos:
+    1) type:
+        los valores seran: 
+        ->"1"
+        ->"A"
+        ->"I"
+    2)
+    3)
+
+    -->
+
+    <div>
+        <h2>Ejemplos de Tipos de Listas</h2>
+
+        <h3>Listas ordenadas</h3>
+
+        <h4>Ejemplo 1: Tabla sencilla</h4>
+
+        <ol type="1">
+            <li>Puños Imperiales
+                <ol type="I">
+                    <li>Puños carmesi</li>
+                    <li>Templarios Negros</li>
+                </ol>
+            </li>
+            <li>Cicatrices Blancas</li>
+            <li>Angeles Oscuros</li>
+            <li>Angeles Sangrientos</li>
+            <li>Ultramarines</li>
+        </ol>
+
+        <hr style="width: 80%;">
+
+        <h4>Listas anidadas</h4>
+
+        <ol>
+            <li>Emperador
+                <ol>
+                    <li>Primarcas
+                        <ol>
+                            <li>capitulos</li>
+                        </ol>
+                    </li>
+                    <li>Señor Solar
+                        <ol>
+                            <li>Astra Militarum</li>
+                            <li>Adeptus Sororitas
+                                <ol>
+                                    <li>Rosa ensangrentada</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+
+                </ol>
+            </li>
+        </ol>
+
+        <hr style="width: 80%;">
+
+        <h3>Irrupcion y continuacion de listas</h3>
+
+        <ol type="a">
+            <li>
+                elemento 1
+            </li>
+            <li>
+                elemento 2
+            </li>
+            <li>
+                elemento 3
+            </li>
+
+        </ol>
+
+        <h4>Explicaciones del elemento 3</h4>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, veritatis.
+            Porro dolore non deserunt quam quaerat inventore atque aperiam voluptatibus.
+        </p>
+
+        <!--
+            la continuaciion de una irrupcion en una lista la abordaremos por 
+            el atributo: start=""
+        -->
+
+        <ol type="a" start="4">
+            <li><b>elemento 4</b></li>
+        </ol>
+
+        <!--
+            Listas no numeradas
+            seran listas no numeradas
+            sintaxis:
+            <ul>
+                <li></li>
+            </ul>
+
+            Atrbutos:
+            type: circle, square, disk
+        -->
+
+        <hr style="width: 90%; background-color: aqua;height: 4px; border-color: red;">
+
+        <h4>Listas no ordenadas</h4>
+
+        <ul>
+            <li>bolter</li>
+            <li>fusion</li>
+            <li>llamas</li>
+            <li>melta</li>
+        </ul>
+
+        <h4>Ejemplo 2 sin listar</h4>
+        <div style="text-align: center;">
+            <ul style="list-style: none;">
+                <li><a href="https://github.com/jik177">Repositorio</a></li>
+                <li><a href="">boton >>></a></li>
+                <li><a href="">boton 💯</a></li>
+            </ul>
+        </div>
+        <div style="text-align: center;">
+            <h3>Listas de glosarios</h3>
+            <!--
+                Listas de glosarios
+                definicion de comceptos, bibliografia, glosario...
+                sintaxis:
+                <dl>
+                    <dt>titulo del dato</dt>
+                    <dd>definicion</dd>
+                </dl>
+            -->
+
+            <h4>Lista de definicion de desarrollo web</h4>
+
+            <dl>
+                <dt>HTML5</dt>
+                <dd>Metaleguaje de marcas para la elavoracion de elementos dentro del DocType</dd>
+                <dt>CSS</dt>
+                <dd>Lenguaje asociado a HTML, para la generacion de estilos en cascada de manera independiente</dd>
+                <dt>JavaScript</dt>
+                <dd>lenguaje de guion, para ejecuciones en el entorno cliente</dd>
+            </dl>
+        </div>
+    </div>
+
+    <!--
+        Listas desplegables
+        Caractersitica principal de etiqueta de apertura y cierre visuales
+        donde se genera de manera interna mensus desplegables de accesibilidad
+        al usuario. indirectamente ya contribuyen a acceder a datos, recoilar...
+        Sintaxis:
+        a)
+        <select> 
+            <option></option>
+        </select>
+        
+        b)
+            <select>
+                <optgroup> 
+                    <option></option>
+                </optgroup>
+        </select>
+    -->
+    <div>
+        <h3>Listas desplegables</h3>
+        <h4>ejemplo 1:Listas sencilla</h4>
+
+        <select name="" id="">
+            <option value="">----Selection de legion----</option>
+            <option value="">Angeles Oscuros</option>
+            <option value="">Hijos de Horus</option>
+            <option value="">Manos de hierro</option>
+        </select>
+
+        <h4>ejemplo 2:optgroup</h4>
+
+        <select name="" id="">
+            <optgroup label="Leales">
+                <option value="">Ultramarines</option>
+                <option value="">Guardia del cuervo</option>
+                <option value="">Angeles Sangrientos</option>
+            </optgroup>
+            <optgroup label="traidores">
+                <option value="">Legion Alpha</option>
+                <option value="">Portadores de la Palabra</option>
+                <option value="">Mil hijos</option>
+            </optgroup>
+        </select>
+
+    </div>
+</body>
+
+</html>
