@@ -1,0 +1,93 @@
+form,
+fieldset {
+    width: 400px;
+    margin: 0 auto;
+    padding-left: 10px;
+    /* margin-left: 32px; revisar como ejecuta 
+    en cascada de centrado a una nueva orden  */
+
+
+}
+
+label {
+    text-align: left;
+    display: inline-block;
+    padding: 6px;
+
+}
+
+/* 
+    ----Nuevos selectores en la confeccion de estilos----
+    
+    I) Asociaciones basados en los element(os con el espacio( elemento, elemento...)
+        otro asociado que era monbrandolos(elelento, elemento div, p ...), los 
+        selectores asociara atributos
+ 
+    */
+
+input:disabled {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+/* 
+    II) Asociaciones que añaden mas directivas, clasicas :hover, :active, :focus
+*/
+
+input:focus,
+textarea:focus {
+    /* cambios de visual cuado se ejecuta */
+    border: 4px solid skyblue;
+}
+
+
+button:hover,
+input:hover {
+    color: white;
+    font-weight: bold;
+    padding: 1px;
+    background-color: black;
+}
+
+.centrado {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* en los links cambio visualsi ya esta se ha seleccionado */
+
+a:visited {
+    color: green;
+    font-weight: bold;
+}
+
+label:active {
+    background-color: brown;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+/*
+    III) Asociaciones de concatenacion,etiqueta, atributos y selectores
+        1.)Asociamos con el simbolo(:) 
+ejemplo:
+    input:checked
+
+        2.) Concatenaciones de atributos y valores con ([]) 
+ejemplo:
+    input[type=checkbox]:checked
+
+        3.) Condiciones asociadas a traves del simbolo (+)
+ejemplo:
+    input[type=checkbox]:checked+label{
+        .estilos a generar
+    }
+
+*/
+
+
+input[type=checkbox]:checked+label {
+    color: blue;
+    font-weight: bold;
+}
