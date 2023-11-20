@@ -1,0 +1,76 @@
+body {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: navy;
+    /* injeccion de imagen, a traves del background */
+    background-image: url();
+    background-repeat: no-repeat;
+    /* 
+        -> auto(deja la imagen por defecto)
+        -> cover(ajusta la imagenal espacio de la imagen)
+        -> contain(expande el elemento al tamaño de la pagina) 
+    */
+    background-size: cover;
+}
+
+/* definido por la extension de su scroll */
+div {
+    /*(1180px) 980px ancho web, y entorno 360 a 380px en movil  */
+    /* esto se entiende como Encapsulado */
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    width: 980px;
+    height: 120px;
+    background-color: gold;
+    color: whitesmoke;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+nav {
+    width: 980px;
+    height: 80px;
+    background-color: navy;
+    color: whitesmoke;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+section {
+    width: 780px;
+    height: 420px;
+    background-color: lightgrey;
+    color: white;
+    font-weight: bold;
+    float: left;
+}
+
+article {
+    width: 780px;
+    height: 210px;
+    background-color: lightslategrey;
+    color: white;
+}
+
+aside {
+    width: 200px;
+    height: 220px;
+    background-color: lightsalmon;
+    color: white;
+    font-weight: bold;
+    float: right;
+
+}
+
+footer {
+    float: left;
+    width: 980px;
+    height: 80px;
+    background-color: lightcoral;
+    font-weight: bold;
+    color: white;
+}

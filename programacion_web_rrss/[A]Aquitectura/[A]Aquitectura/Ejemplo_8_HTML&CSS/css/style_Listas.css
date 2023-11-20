@@ -1,0 +1,14 @@
+ol,
+li {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+img {
+    width: 35px;
+}   
+
+.colocacionLink{
+    text-align: left;
+    float: left;
+}
