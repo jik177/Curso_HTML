@@ -1,0 +1,75 @@
+/* 
+            ------ Animaciones ------
+    Establecemos una gran diferencia de estados en los
+    elementos de forma dinamica no estatica medidos en
+    tiempo y puntos de trayectoria, entendidos como secuencias.
+
+    Atributos de las animaciones:
+    1º)animation-name(nombre de referencia a la estructura animada)
+    2º)animation-duration(tiempo de duracion de la animacion 
+                          definido en segundos o milisegundos)
+    3º)animation-itineration-count(como se produce su repeticion)
+
+    Sintaxis:
+    @keyframe(definido como estructura de controlador que permite 
+    definir las secuencias, es decir, las trayectorias de ejecucion)
+
+    @keyframe nombre de la animacion animacion_name  {
+
+    0%{
+        leguaje definido al inicio de la animacion
+    }   
+    25%{
+        leguaje definido al 2/4 de oa ejecucion
+    }   
+    50%{
+        leguaje definido al 3/4 de oa ejecucion
+    }   
+    75%{
+        leguaje definido 4/4 de oa ejecucion
+    }   
+
+
+    }
+*/
+
+#animacion {
+    width: 10em;
+    height: 10em;
+    background-color: skyblue;
+    font-size: 1em;
+    text-align: center;
+    padding: 4em;
+    animation-name: an1;
+    animation-duration: 10s;
+    -moz-animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes an1 {
+    0% {
+       background-color: aqua;
+        font-size: 1.5em;
+    }
+    25% {
+        background-color: blue;
+        font-size: 2em;
+        width: 15em;
+        border: 0.1em solid aqua;
+    }
+
+    50% {
+        background-color: aqua;
+        font-size: 2em;
+        width: 15em;
+        border: 0.1em solid blue;
+        transform: translateX(400px);
+
+    }
+
+    75% {
+        background-color: aqua;
+        font-size: 1.5em;
+        transform: translateX(0px);
+    }
+}
