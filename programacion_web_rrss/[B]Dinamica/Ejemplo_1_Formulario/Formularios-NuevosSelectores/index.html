@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!-- links locales -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- links externos -->
+
+</head>
+
+<body>
+
+
+    <!-- 
+                Formularios
+    Un conjunto de elementos que en su interrelacion permite al usuario introducir 
+    un conjunto de datos asocioado a un coleccion de datos.
+    Sintaxis:
+    a) <form></form> (etiqueta que da forma a la estructura del formulario)
+        
+        I) <fieldset></fieldset>(agrupacion de datos en bloque de los datos)
+        II)<legend></legend>(titulos del formulario)
+        III)<label> ()
+
+    Introduccion de datos:
+
+        -> type( le da la naturaleza al elemento: texto, numero, fecha, color )
+        -> name( da nombre al elemento llamado y que sera asociado a la variable)
+        -> size (tamaño del elemento)
+        -> value( que valor va a tener eñ elemento)
+        -> disable(da la posiblilidad de desactivar un elemento)
+        -> placeholder( accesibilidad para dar un ejemplo dentro del elemento)
+    
+    Menus:
+
+        <select>
+            <option></option>
+            <optgroup></optgroup>
+        </select>
+        <datalist>
+            <option></option>
+        </datalist>
+
+    Envio de datos:
+
+        <input>
+        <button> </button>
+-->
+
+    <div>
+        <h2 class="centrado">Formulario y Selectores</h2>
+        <form action="" method="">
+            <!-- lo que diferencia el formulario html5 del web, será su propia ejecucioon -->
+            <fieldset>
+                <legend>DATOS PERSONALES</legend>
+                <label for="">Nombre</label>
+                <input type="text" name="nombre" placeholder="Introduce tu nombre"><br>
+                <label for="">Apellidos</label>
+                <input type="text" name="Apellidos" placeholder="Introduce tus dos apellidos">
+                <label for="">Edad</label>
+                <input type="number" value="22" name="edad" min="18" style="width: 48px;;" disabled>
+                <label for="">Sexo</label>
+                <input type="checkbox" /><label for="" checked="true">Hombre</label>
+                <input type="checkbox" /> <label for="">Mujer</label>
+                <input type="checkbox" /><label for="">Fluido</label>
+                <label for="">Fecha de Nacimiento</label>
+                <input type="date" name="fechaN">
+
+            </fieldset>
+            <fieldset>
+                <legend>Reserva:</legend>
+                <label for="">Escoge Aventura</label>
+                <select name="experiencia" id="">
+                    <option value="0">---Elegi Aventura------</option>
+                    <option value="1">Descensos Rapidos (150€ por persona)</option>
+                    <option value="2">Viaje en Velero (135€ por persona)</option>
+                    <option value="3">3 Clases de surf (90€ por persona)</option>
+                    <option value="4">Paseo a Caballo por la playa (35€ por persona)</option>
+                </select>
+                <label for="">Fecha de reserva</label>
+                <input type="datetime-local">
+            </fieldset>
+            <fieldset>
+                <legend>Contacto</legend>
+                <label for="">e-mail</label>
+                <input type="email" name="email"><br>
+                <label for="">Añadir Comentario</label>
+                <textarea name="comentario" id="" cols="50" rows="5"></textarea>
+                <input type="radio" name="" id="" checked="true">Acepta las condiciones
+            </fieldset>
+            <fieldset>
+                <legend>Datos Adjuntos</legend>
+                <input type="file" name="dni">
+            </fieldset>
+            <fieldset>
+                <legend>Enviar</legend>
+                <div class="centrado">
+                    <input type="submit">
+                    <button type="reset">Borrar</button>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Danos tu valoracion</legend>
+                <input type="" name="valoracion" min="1" max="3" list="opinion">
+                <datalist id="opinion">
+                    <option value="1">Buena 👌</option>
+                    <option value="5">Muy Buena 👍</option>
+                    <option value="0">Regular 🖖</option>
+                </datalist>
+            </fieldset>
+            <a href="">Ir al inicio>></a>
+        </form>
+
+    </div>
+</body>
+
+
+</html>
