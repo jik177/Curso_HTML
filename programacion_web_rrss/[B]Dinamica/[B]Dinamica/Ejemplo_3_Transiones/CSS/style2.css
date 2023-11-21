@@ -1,0 +1,41 @@
+.centrado{
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.horror{
+    width: 30em;
+    min-height: 10em;
+    padding: 1em;
+    font-weight: bold;
+    text-align: justify;
+    background-color: gray;
+    color: white;
+    margin: 0 auto;
+    transition: width 6s, height 6s, background-color 6s, color 6s;
+}
+
+.horror:hover{
+    width: 60%;
+    height: 2em;
+    background-color: wheat;
+    color: black;
+}
+
+.menu{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(212, 205, 205);
+    border-color:black;
+    font-size: 32px;
+    box-shadow: 2px 2px 2px rgb(139, 137, 137);
+    border-radius: 1em;
+    padding: 0.6em;
+    margin: 1em;
+    transition: background-color 0.7s, border-radius 0.8s;
+}
+.menu:hover{
+    background-color: rgb(238, 212, 212);
+    border-radius: 0.8em;
+}

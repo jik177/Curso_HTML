@@ -1,0 +1,44 @@
+/* 
+            ---------- Rotaciones ---------- 
+    Generan y definen un movimiento estatico, partiendo
+    del elemento inicial con respecto a un cambio de su 
+    ejes de cordenadas
+    Sintaxis:
+        Transform(atributo de las transiciones y los
+                valores definidos en este caso son 
+                conocido como "rotate" en grados y 
+                degree)
+*/
+
+/* 1º defimimos el objeto */
+div{
+    float: left;
+    width: 10em;
+    height: 10em;
+    background-color: skyblue;
+    border: 16px solid lightcyan;
+    border-radius: 1em ;
+    box-shadow: 1em 1em 1em skyblue;
+    margin: 3em;
+    /*2º definimos el movimiento estatico y su tiempo */
+    transition: transform 1.5s;
+    
+}
+
+/* 3º definimos ek movimiento */
+#cuadrado1:hover{
+    transform: rotate(30deg);
+}
+
+#cuadrado2:hover{
+    transform: rotate(-30deg);
+}
+
+/* en los 3d se define el eje x , eje y , eje z junto a los grados */
+#cuadrado3:hover{
+    transform: rotate3d(1,1,1,120deg);
+}
+#cuadrado4:hover{
+    transform: rotateX(90deg);
+}
+
